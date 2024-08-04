@@ -1,14 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+const departamento = "Boyacá";
 
 ---
 
-<Layout title="Biodiversidad en Boyaca">
+<Layout title={departamento}>
 	<main class="container min-h-screen px-10 lg:mt-12 lg:px-0 mx-auto">
 		<section class="flex flex-col md:items-center">
 			<div>
-				<h1 class="lg:text-5xl text-6xl text-white font-bold text-center w-f">Biodiversidad</h1>	
+				<h1 class="lg:text-5xl text-6xl text-white font-bold text-center w-f">{departamento}</h1>	
 			</div>
 			<div>
 				<img src="/public/boyaca.svg" alt="" class="w-[800px]">
