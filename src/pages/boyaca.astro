@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+---
+
+<Layout title="Biodiversidad en Boyaca">
+	<main class="container min-h-screen px-10 lg:mt-12 lg:px-0 mx-auto">
+		<section class="flex flex-col md:items-center">
+			<div>
+				<h1 class="lg:text-5xl text-6xl text-white font-bold text-center w-f">Biodiversidad</h1>	
+			</div>
+			<div>
+				<img src="/public/boyaca.svg" alt="" class="w-[800px]">
+			</div>
+		</section>
+		<section class="mb-10 lg:mx-28">
+			<p class="text-white py-5">
+				Colombia es uno de los pocos países megadiversos en el mundo, se estima que en el país podrían existir entre 200.000 y 900.000 especies. Puede decirse que, aproximadamente, por cada 10 especies que existen en el planeta, una habita en nuestro territorio. Tener una riqueza natural tan amplia es un regalo y, al mismo tiempo, una responsabilidad con la que, afortunadamente, muchas personas y organizaciones están comprometidas.
+			</p>
+			
+			<div class="grid grid-cols-2 gap-4">
+				<Card 
+				title="Flora"
+				href='#'
+			/>
+			
+				<Card 
+				title="Fauna"			
+				href='#'
+			/>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+
